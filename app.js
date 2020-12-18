@@ -1,16 +1,14 @@
-function combine(input1, input2, resultConversion) {
-    var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
-        result = +input1 + +input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
+// unknown is a better type to use instead of any
+// since unknown is more strict with the specific type before you try to use the variable 
+// which forces you to do a extra type check
+var userInput;
+var userName;
+userInput = 5;
+userInput = 'Max';
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-var combineAges = combine(30, 26, 'as-number');
-console.log(combineAges);
-var combineStringAges = combine('30', '26', 'as-number');
-console.log(combineStringAges);
-var combineNames = combine('Kevin', 'Lyn', 'as-string');
-console.log(combineNames);
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
+}
+generateError('An error occurred!', 500);
