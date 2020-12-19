@@ -75,8 +75,6 @@
   },
   "exclude": [
     "01_TS_Basics_and_Basic_Types",
-    "02_TS_Compiler",
-    "03_TS_Next-Gen_JS&TS",
     "node_modules"
   ],
   // "files"(to include files)  "include"(to include files and/or folders)
