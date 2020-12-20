@@ -79,6 +79,7 @@
     "03_TS_Next-Gen_JS&TS",
     "04_TS_Classes&Interfaces",
     "05_TS_Advanced_Types",
+    "06_TS_Generics",
     "node_modules"
   ],
   // "files"(to include files)  "include"(to include files and/or folders)
