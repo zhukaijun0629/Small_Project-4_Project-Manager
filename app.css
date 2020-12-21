@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  max-width: 600px;
 }
 
 label,
@@ -58,6 +59,7 @@ button:active {
 .projects {
   margin: 1rem;
   border: 1px solid #ff0062;
+  pointer-events: none;
 }
 
 .projects header {
@@ -66,6 +68,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 
 #finished-projects {
@@ -79,18 +82,38 @@ button:active {
 .projects h2 {
   margin: 0;
   color: white;
+  pointer-events: none;
+
 }
 
 .projects ul {
   list-style: none;
   margin: 0;
   padding: 1rem;
+  min-height: 100px;
+  pointer-events: visible;
 }
 
 .projects li {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
   padding: 1rem;
   margin: 1rem;
+  background: white;
+  pointer-events: inherit;
+}
+
+.projects li .child-elements {
+  pointer-events: none;
+}
+
+.projects li:hover {
+  cursor: grab;
+  background:rgb(225, 225, 225);
+}
+.projects li:active {
+  cursor: grabbing;
+  background:rgba(200,200,200,0.5);
+  opacity: .3;
 }
 
 .projects li h2 {
@@ -109,6 +132,7 @@ button:active {
 
 .project li p {
   margin: 0;
+
 }
 
 .droppable {
