@@ -1,4 +1,4 @@
-# Small_Project-4_TS-ToDo-List
-This is a To-Do List web app, created using TypeScript, HTML and CSS.
+# Small_Project-4_Project-Manager
+This is a web app for managing projects, created using TypeScript, HTML and CSS.
 
-Try out this app on your browser [**To-Do List**](https://zhukaijun0629.github.io/Small_Project-4_TS-ToDo-List/)
+Try out this app on your browser [**Project Manager**](https://zhukaijun0629.github.io/Small_Project-4_Project-Manager/)
